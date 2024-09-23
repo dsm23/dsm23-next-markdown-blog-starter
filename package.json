@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "fmt": "prettier --write .",
+    "fmt.check": "prettier --check ."
   },
   "dependencies": {
     "@tailwindcss/postcss": "4.0.0-alpha.13",
@@ -26,7 +28,11 @@
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "@commitlint/types": "^19.5.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "commitizen": "^4.3.0",
-    "cz-conventional-changelog": "^3.3.0"
+    "cz-conventional-changelog": "^3.3.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-css-order": "^2.1.2",
+    "prettier-plugin-tailwindcss": "^0.6.6"
   }
 }
