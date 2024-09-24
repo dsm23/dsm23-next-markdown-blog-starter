@@ -33,7 +33,7 @@ jobs:
           version: 9
 
       - name: Set up node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           # We want to ensure that the Node.js version running here respects our supported versions
           node-version-file: ".nvmrc"
