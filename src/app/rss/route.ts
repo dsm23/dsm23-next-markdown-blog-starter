@@ -1,5 +1,5 @@
-import { getBlogPosts } from "app/blog/utils";
-import { baseUrl } from "app/sitemap";
+import { getBlogPosts } from "src/app/blog/utils";
+import { baseUrl } from "src/app/sitemap";
 
 export function GET() {
   const allBlogs = getBlogPosts();

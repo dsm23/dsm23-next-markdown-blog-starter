@@ -57,11 +57,11 @@ export default ts.config(
     },
   },
   {
-    files: ["!**/{app, components}/**"],
+    files: ["!**/src/**"],
     ...ts.configs.disableTypeChecked,
   },
   {
-    files: ["**/{app, components}/**/*.{js,mjs,cjs,ts,jsx,tsx}"],
+    files: ["**/src/**/*.{js,mjs,cjs,ts,jsx,tsx}"],
     rules: {
       "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/restrict-template-expressions": [
