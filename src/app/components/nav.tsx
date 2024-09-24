@@ -7,9 +7,10 @@ const navItems = {
   "/blog": {
     name: "blog",
   },
-  "https://vercel.com/templates/next.js/portfolio-starter-kit": {
-    name: "deploy",
-  },
+  "https://vercel.com/new/git/external?repository-url=https://github.com/dsm23/dsm23-next-markdown-blog-starter/":
+    {
+      name: "deploy",
+    },
 };
 
 export function Navbar() {
