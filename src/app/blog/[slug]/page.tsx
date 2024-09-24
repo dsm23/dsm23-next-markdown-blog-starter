@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { formatDate, getBlogPosts } from "app/blog/utils";
-import { CustomMDX } from "app/components/mdx";
-import { baseUrl } from "app/sitemap";
+import { formatDate, getBlogPosts } from "src/app/blog/utils";
+import { CustomMDX } from "src/app/components/mdx";
+import { baseUrl } from "src/app/sitemap";
 
 type Props = {
   params: {
