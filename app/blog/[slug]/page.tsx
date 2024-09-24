@@ -1,29 +1,37 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { formatDate, getBlogPosts } from "app/blog/utils";
 import { CustomMDX } from "app/components/mdx";
 import { baseUrl } from "app/sitemap";
 
-export async function generateStaticParams() {
-  let posts = getBlogPosts();
+type Props = {
+  params: {
+    slug: string;
+  };
+};
+
+export function generateStaticParams() {
+  const posts = getBlogPosts();
 
   return posts.map((post) => ({
     slug: post.slug,
   }));
 }
 
-export function generateMetadata({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+export function generateMetadata({ params }: Props): Metadata {
+  const post = getBlogPosts().find((post) => post.slug === params.slug);
+
   if (!post) {
-    return;
+    return {};
   }
 
-  let {
+  const {
     title,
     publishedAt: publishedTime,
     summary: description,
     image,
   } = post.metadata;
-  let ogImage = image
+  const ogImage = image
     ? image
     : `${baseUrl}/og?title=${encodeURIComponent(title)}`;
 
@@ -51,8 +59,8 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function Blog({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+export default function Blog({ params }: Props) {
+  const post = getBlogPosts().find((post) => post.slug === params.slug);
 
   if (!post) {
     notFound();
