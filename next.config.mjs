@@ -1,7 +1,11 @@
+import withBundleAnalyzer from "@next/bundle-analyzer";
+import withPlugins from "next-compose-plugins";
+import { env } from "./env.mjs";
+
 /**
  * @type {import('next').NextConfig}
  */
-const config = {
+const config = withPlugins([[withBundleAnalyzer({ enabled: env.ANALYZE })]], {
   reactStrictMode: true,
   eslint: {
     // Warning: This allows production builds to successfully complete even if
@@ -16,6 +20,6 @@ const config = {
       { source: "/ping", destination: "/api/health" },
     ];
   },
-};
+});
 
 export default config;
