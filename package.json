@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "prepare": "husky",
+    "prepare": "node .husky/install.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
