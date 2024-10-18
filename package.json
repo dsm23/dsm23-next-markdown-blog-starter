@@ -1,9 +1,10 @@
 {
   "name": "dsm23-next-markdown-blog-starter",
   "private": true,
+  "type": "module",
   "scripts": {
     "prepare": "node .husky/install.mjs",
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "fmt": "prettier --write .",
@@ -14,21 +15,20 @@
     "lint": "pnpm run lint:md && pnpm run lint:js && pnpm run lint:css"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "^14.2.15",
+    "@next/bundle-analyzer": "15.0.0-rc.1",
     "@t3-oss/env-nextjs": "^0.11.1",
     "@tailwindcss/postcss": "4.0.0-alpha.24",
     "@types/node": "22.7.6",
-    "@types/react": "18.3.11",
-    "@types/react-dom": "18.3.1",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
     "@vercel/analytics": "^1.3.1",
     "@vercel/speed-insights": "^1.0.12",
     "geist": "1.3.1",
-    "next": "^14.2.15",
-    "next-compose-plugins": "^2.2.1",
+    "next": "15.0.0-rc.1",
     "next-mdx-remote": "^5.0.0",
     "postcss": "^8.4.47",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.0.0-rc-cd22717c-20241013",
+    "react-dom": "19.0.0-rc-cd22717c-20241013",
     "sugar-high": "^0.7.1",
     "tailwindcss": "4.0.0-alpha.24",
     "zod": "^3.23.8"
@@ -47,7 +47,7 @@
     "commitizen": "^4.3.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "9.12.0",
-    "eslint-config-next": "14.2.15",
+    "eslint-config-next": "15.0.0-rc.1",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-import": "^2.31.0",
@@ -70,5 +70,11 @@
     "stylelint-selector-bem-pattern": "^4.0.1",
     "typescript": "5.6.3",
     "typescript-eslint": "^8.10.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "npm:types-react@19.0.0-rc.1",
+      "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
+    }
   }
 }
