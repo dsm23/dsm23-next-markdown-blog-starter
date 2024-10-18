@@ -5,9 +5,9 @@ import { CustomMDX } from "src/app/components/mdx";
 import { baseUrl } from "src/app/sitemap";
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 export function generateStaticParams() {
@@ -18,7 +18,8 @@ export function generateStaticParams() {
   }));
 }
 
-export function generateMetadata({ params }: Props): Metadata {
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const params = await props.params;
   const post = getBlogPosts().find((post) => post.slug === params.slug);
 
   if (!post) {
@@ -59,7 +60,8 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-export default function Blog({ params }: Props) {
+export default async function Blog(props: Props) {
+  const params = await props.params;
   const post = getBlogPosts().find((post) => post.slug === params.slug);
 
   if (!post) {
