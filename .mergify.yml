@@ -16,9 +16,9 @@ pull_request_rules:
       review:
         type: APPROVE
         message: Automatically approving dsm23
-  - name: automatic approval for Dependabot pull requests
+  - name: automatic approval for Renovate pull requests
     conditions:
-      - author=dependabot[bot]
+      - author=renovate[bot]
       - check-success=analyze-bundle
       - check-success=check
       - check-success=code-review
@@ -31,7 +31,7 @@ pull_request_rules:
     actions:
       review:
         type: APPROVE
-        message: Automatically approving dependabot
+        message: Automatically approving renovate
   # merge
   - name: Automatically merge when GitHub Actions jobs succeed
     conditions:
