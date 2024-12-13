@@ -122,7 +122,7 @@ importers:
         version: 0.11.1(eslint@9.16.0(jiti@2.4.0))(typescript@5.7.2)
       eslint-plugin-tailwindcss:
         specifier: ^3.17.5
-        version: 3.17.5(tailwindcss@4.0.0-beta.6)
+        version: 3.17.5(tailwindcss@4.0.0-beta.7)
       globals:
         specifier: ^15.13.0
         version: 15.13.0
@@ -160,8 +160,8 @@ importers:
         specifier: ^4.0.1
         version: 4.0.1(stylelint@16.11.0(typescript@5.7.2))
       tailwindcss:
-        specifier: 4.0.0-beta.6
-        version: 4.0.0-beta.6
+        specifier: 4.0.0-beta.7
+        version: 4.0.0-beta.7
       typescript:
         specifier: 5.7.2
         version: 5.7.2
@@ -4475,6 +4475,9 @@ packages:
   tailwindcss@4.0.0-beta.6:
     resolution: {integrity: sha512-eCCuMk3H65w4J/QWkjxfeWoBSKbCD3E6Uj2LA6Xkkl4eMa1MXuwVpIU1RXcLIp+BVsXGEZMP7i7uJig7KxfAXQ==}
 
+  tailwindcss@4.0.0-beta.7:
+    resolution: {integrity: sha512-9JXrCC5UVt2bjV9lrjO+B7MPY+bgpWCf5sPbu+Ih5rGvGE6STwA94N6Ah1xMa0Avzp48fB/S1l0vByTp2HEzAw==}
+
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
@@ -7798,11 +7801,11 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-tailwindcss@3.17.5(tailwindcss@4.0.0-beta.6):
+  eslint-plugin-tailwindcss@3.17.5(tailwindcss@4.0.0-beta.7):
     dependencies:
       fast-glob: 3.3.2
       postcss: 8.4.49
-      tailwindcss: 4.0.0-beta.6
+      tailwindcss: 4.0.0-beta.7
 
   eslint-plugin-testing-library@5.11.1(eslint@9.16.0(jiti@2.4.0))(typescript@5.7.2):
     dependencies:
@@ -10030,6 +10033,8 @@ snapshots:
       strip-ansi: 6.0.1
 
   tailwindcss@4.0.0-beta.6: {}
+
+  tailwindcss@4.0.0-beta.7: {}
 
   tapable@2.2.1: {}
 
