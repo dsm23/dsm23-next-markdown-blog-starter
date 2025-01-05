@@ -42,8 +42,8 @@ importers:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
       sugar-high:
-        specifier: ^0.7.5
-        version: 0.7.5
+        specifier: ^0.8.0
+        version: 0.8.1
       zod:
         specifier: ^3.23.8
         version: 3.24.1
@@ -4596,8 +4596,8 @@ packages:
     engines: {node: '>=18.12.0'}
     hasBin: true
 
-  sugar-high@0.7.5:
-    resolution: {integrity: sha512-lfGxo0il0Mx4WLdXEt0WsJ8V3QkQWssXnolj5xBurzlGJW07LuwmJWKtS0B2WJ5XWz1439RHngXAmzsnLD0rFA==}
+  sugar-high@0.8.1:
+    resolution: {integrity: sha512-PqdbMRoo1Q415DA6H0IQA2PunW8dKjoWQUceWylI9WaGkOZumN8+7JSui3xQUvGB8vWyjsY+VFyd2gFBofJYUw==}
 
   supports-color@5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}
@@ -10501,7 +10501,7 @@ snapshots:
       - supports-color
       - typescript
 
-  sugar-high@0.7.5: {}
+  sugar-high@0.8.1: {}
 
   supports-color@5.5.0:
     dependencies:
