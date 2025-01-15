@@ -31,7 +31,7 @@ importers:
         version: 5.0.0(@types/react@19.0.7)(react@19.0.0)
       postcss:
         specifier: ^8.4.49
-        version: 8.4.49
+        version: 8.5.1
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -137,10 +137,10 @@ importers:
         version: 3.4.2
       prettier-plugin-css-order:
         specifier: ^2.1.2
-        version: 2.1.2(postcss@8.4.49)(prettier@3.4.2)
+        version: 2.1.2(postcss@8.5.1)(prettier@3.4.2)
       prettier-plugin-tailwindcss:
         specifier: ^0.6.9
-        version: 0.6.10(@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.4.2))(prettier-plugin-css-order@2.1.2(postcss@8.4.49)(prettier@3.4.2))(prettier@3.4.2)
+        version: 0.6.10(@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.4.2))(prettier-plugin-css-order@2.1.2(postcss@8.5.1)(prettier@3.4.2))(prettier@3.4.2)
       stylelint:
         specifier: ^16.11.0
         version: 16.12.0(typescript@5.7.3)
@@ -3723,11 +3723,6 @@ packages:
   mute-stream@0.0.8:
     resolution: {integrity: sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==}
 
-  nanoid@3.3.7:
-    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
   nanoid@3.3.8:
     resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -4024,8 +4019,8 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.4.49:
-    resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
+  postcss@8.5.1:
+    resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -6474,7 +6469,7 @@ snapshots:
       '@tailwindcss/node': 4.0.0-beta.9
       '@tailwindcss/oxide': 4.0.0-beta.9
       lightningcss: 1.29.1
-      postcss: 8.4.49
+      postcss: 8.5.1
       tailwindcss: 4.0.0-beta.9
 
   '@types/acorn@4.0.6':
@@ -7266,9 +7261,9 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  css-declaration-sorter@7.2.0(postcss@8.4.49):
+  css-declaration-sorter@7.2.0(postcss@8.5.1):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.1
 
   css-functions-list@3.2.3: {}
 
@@ -7971,7 +7966,7 @@ snapshots:
   eslint-plugin-tailwindcss@3.17.5(tailwindcss@4.0.0-beta.9):
     dependencies:
       fast-glob: 3.3.2
-      postcss: 8.4.49
+      postcss: 8.5.1
       tailwindcss: 4.0.0-beta.9
 
   eslint-plugin-testing-library@5.11.1(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3):
@@ -9408,8 +9403,6 @@ snapshots:
 
   mute-stream@0.0.8: {}
 
-  nanoid@3.3.7: {}
-
   nanoid@3.3.8: {}
 
   natural-compare-lite@1.4.0: {}
@@ -9695,34 +9688,34 @@ snapshots:
 
   possible-typed-array-names@1.0.0: {}
 
-  postcss-bem-linter@4.0.1(postcss@8.4.49):
+  postcss-bem-linter@4.0.1(postcss@8.5.1):
     dependencies:
       minimatch: 3.1.2
-      postcss: 8.4.49
+      postcss: 8.5.1
       postcss-resolve-nested-selector: 0.1.6
 
-  postcss-less@6.0.0(postcss@8.4.49):
+  postcss-less@6.0.0(postcss@8.5.1):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.1
 
   postcss-resolve-nested-selector@0.1.6: {}
 
-  postcss-safe-parser@7.0.1(postcss@8.4.49):
+  postcss-safe-parser@7.0.1(postcss@8.5.1):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.1
 
-  postcss-scss@4.0.9(postcss@8.4.49):
+  postcss-scss@4.0.9(postcss@8.5.1):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.1
 
   postcss-selector-parser@7.0.0:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
-  postcss-sorting@8.0.2(postcss@8.4.49):
+  postcss-sorting@8.0.2(postcss@8.5.1):
     dependencies:
-      postcss: 8.4.49
+      postcss: 8.5.1
 
   postcss-value-parser@4.2.0: {}
 
@@ -9732,29 +9725,29 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postcss@8.4.49:
+  postcss@8.5.1:
     dependencies:
-      nanoid: 3.3.7
+      nanoid: 3.3.8
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-css-order@2.1.2(postcss@8.4.49)(prettier@3.4.2):
+  prettier-plugin-css-order@2.1.2(postcss@8.5.1)(prettier@3.4.2):
     dependencies:
-      css-declaration-sorter: 7.2.0(postcss@8.4.49)
-      postcss-less: 6.0.0(postcss@8.4.49)
-      postcss-scss: 4.0.9(postcss@8.4.49)
+      css-declaration-sorter: 7.2.0(postcss@8.5.1)
+      postcss-less: 6.0.0(postcss@8.5.1)
+      postcss-scss: 4.0.9(postcss@8.5.1)
       prettier: 3.4.2
     transitivePeerDependencies:
       - postcss
 
-  prettier-plugin-tailwindcss@0.6.10(@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.4.2))(prettier-plugin-css-order@2.1.2(postcss@8.4.49)(prettier@3.4.2))(prettier@3.4.2):
+  prettier-plugin-tailwindcss@0.6.10(@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.4.2))(prettier-plugin-css-order@2.1.2(postcss@8.5.1)(prettier@3.4.2))(prettier@3.4.2):
     dependencies:
       prettier: 3.4.2
     optionalDependencies:
       '@ianvs/prettier-plugin-sort-imports': 4.4.1(prettier@3.4.2)
-      prettier-plugin-css-order: 2.1.2(postcss@8.4.49)(prettier@3.4.2)
+      prettier-plugin-css-order: 2.1.2(postcss@8.5.1)(prettier@3.4.2)
 
   prettier@3.4.2: {}
 
@@ -10270,15 +10263,15 @@ snapshots:
 
   stylelint-order@6.0.4(stylelint@16.12.0(typescript@5.7.3)):
     dependencies:
-      postcss: 8.4.49
-      postcss-sorting: 8.0.2(postcss@8.4.49)
+      postcss: 8.5.1
+      postcss-sorting: 8.0.2(postcss@8.5.1)
       stylelint: 16.12.0(typescript@5.7.3)
 
   stylelint-selector-bem-pattern@4.0.1(stylelint@16.12.0(typescript@5.7.3)):
     dependencies:
       lodash: 4.17.21
-      postcss: 8.4.49
-      postcss-bem-linter: 4.0.1(postcss@8.4.49)
+      postcss: 8.5.1
+      postcss-bem-linter: 4.0.1(postcss@8.5.1)
       stylelint: 16.12.0(typescript@5.7.3)
 
   stylelint@16.12.0(typescript@5.7.3):
@@ -10310,9 +10303,9 @@ snapshots:
       micromatch: 4.0.8
       normalize-path: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.4.49
+      postcss: 8.5.1
       postcss-resolve-nested-selector: 0.1.6
-      postcss-safe-parser: 7.0.1(postcss@8.4.49)
+      postcss-safe-parser: 7.0.1(postcss@8.5.1)
       postcss-selector-parser: 7.0.0
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
