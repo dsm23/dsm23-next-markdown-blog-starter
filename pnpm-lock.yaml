@@ -116,7 +116,7 @@ importers:
         version: 0.11.2(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3)
       eslint-plugin-tailwindcss:
         specifier: ^3.17.5
-        version: 3.17.5(tailwindcss@4.0.0-beta.9)
+        version: 3.17.5(tailwindcss@4.0.0-beta.10)
       globals:
         specifier: ^15.13.0
         version: 15.14.0
@@ -154,8 +154,8 @@ importers:
         specifier: ^4.0.1
         version: 4.0.1(stylelint@16.13.2(typescript@5.7.3))
       tailwindcss:
-        specifier: 4.0.0-beta.9
-        version: 4.0.0-beta.9
+        specifier: 4.0.0-beta.10
+        version: 4.0.0-beta.10
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -4569,6 +4569,9 @@ packages:
     resolution: {integrity: sha512-9kY+CygyYM6j02t5YFHbNz2FN5QmYGv9zAjVp4lCDjlCw7amdckXlEt/bjMhUIfj4ThGRE4gCUH5+yGnNuPo5A==}
     engines: {node: '>=10.0.0'}
 
+  tailwindcss@4.0.0-beta.10:
+    resolution: {integrity: sha512-QphgB58oviLYkSWu74+5S2FU8sREus9wBEzWWi5iSxnBrgzfVFp7pIeAPbQ7gq1WXnbllCipsTjK3yT+Do4y0Q==}
+
   tailwindcss@4.0.0-beta.9:
     resolution: {integrity: sha512-96KpsfQi+/sFIOfyFnGzyy5pobuzf1iMBD9NVtelerPM/lPI2XUS4Kikw9yuKRniXXw77ov1sl7gCSKLsn6CJA==}
 
@@ -7986,11 +7989,11 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-tailwindcss@3.17.5(tailwindcss@4.0.0-beta.9):
+  eslint-plugin-tailwindcss@3.17.5(tailwindcss@4.0.0-beta.10):
     dependencies:
       fast-glob: 3.3.2
       postcss: 8.5.1
-      tailwindcss: 4.0.0-beta.9
+      tailwindcss: 4.0.0-beta.10
 
   eslint-plugin-testing-library@5.11.1(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3):
     dependencies:
@@ -10381,6 +10384,8 @@ snapshots:
       slice-ansi: 4.0.0
       string-width: 4.2.3
       strip-ansi: 6.0.1
+
+  tailwindcss@4.0.0-beta.10: {}
 
   tailwindcss@4.0.0-beta.9: {}
 
